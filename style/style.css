@@ -1,0 +1,144 @@
+body {
+    
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+ /*Header and menu */
+.header {
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    padding: 0;
+    margin: 0;
+} 
+.menu a {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 35px;
+    margin-top: 15px;
+    
+}
+
+.logo img {
+    padding-top: 15px;
+}
+.menu {
+    
+    overflow: hidden;
+    
+}
+
+/* Content Photo */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+.column {
+    flex: 25%;
+    max-width: 25%;
+    
+  }
+.column img {
+    
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+.image {
+    position:relative;
+    
+}
+.image img {
+    opacity:0.7;
+    
+}
+.wraper {
+    position:absolute;
+    left:10px;
+    bottom:-10px;
+    color: white;
+    display:none;
+    font-family: 'Raleway', sans-serif;
+    
+}
+.image:hover img {
+    opacity:1;
+}
+.image:hover .wraper{
+    display:block;
+    opacity:1;
+    
+}
+
+/*Footer*/
+.footer {
+height: 70px;
+display: flex;
+margin-top: 40px;
+justify-content:center ;
+}
+
+a.button {
+    
+    font-size: 18px;
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 7px 30px;
+    background-color: black;
+}
+a.button:hover {
+     background-color: white;
+     color: black;
+     border: 2px solid white;
+     }
+
+
+
+/* Media for tablet*/
+@media screen and (max-width: 799px) {
+    .header {
+        flex-direction:column;
+        align-items: center;
+    }
+    .menu a { 
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .menu {
+        margin: auto;
+        overflow: hidden;
+        
+    }
+    .column {
+
+        flex: 50%;
+        max-width: 50%;
+      }
+    
+  }
+ /* Media for mobile*/
+  @media screen  and (max-width: 460px)  {
+    .column {
+        
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+  }
+
+ 
+
