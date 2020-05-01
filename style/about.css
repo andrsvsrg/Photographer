@@ -67,7 +67,8 @@ blockquote {
     
 }
 .about_img img{
-    width: 60%;
+    flex:60%;
+    max-width: 60%;
     padding-left: 10px;
 }
 
@@ -148,7 +149,9 @@ color:white;
         text-align: center;
     }
     .about_img img{
-        width: 100%;
+        flex:100%;
+        max-width: 100%;
+        
     }
     .about, h3, .contact, table {
         
