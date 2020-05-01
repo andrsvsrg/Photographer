@@ -64,6 +64,7 @@ blockquote {
 .about_img{
     display: flex;
     width: 100%;
+    position:relative;
     
 }
 .about_img img{
