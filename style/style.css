@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content:space-between;
     padding: 0;
-    margin: 0;
+    margin-bottom: 20px;
 } 
 .menu a {
     display: block;
