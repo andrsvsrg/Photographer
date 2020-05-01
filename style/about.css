@@ -62,7 +62,7 @@ blockquote {
     color:gray;
 }
 .about_img{
-    display: flex;
+    display: block;
     width: 100%;
     position:relative;
     
