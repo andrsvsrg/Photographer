@@ -1,0 +1,174 @@
+body {
+    
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+ /*Header and menu */
+.header {
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    padding: 0;
+    margin-bottom: 20px;
+} 
+.menu a {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 14px 35px;
+    margin-top: 15px;
+    
+}
+
+.logo img {
+    padding-top: 15px;
+}
+.menu {
+    
+    overflow: hidden;
+    
+}
+ /* CONTENT*/
+
+.main_img {
+    display: block;
+    width: 100%;
+    position:relative;
+}
+.main_img img {
+    flex:70%;
+    max-width: 70%;
+}
+.description{
+    display: flex;
+}
+.descriptoin_general {
+    padding-top: 20px;
+    padding-right: 1%;
+    flex:14%;
+    max-width: 14%;
+}
+.description_content {
+    flex:53%;
+    max-width: 53%;
+    padding-left: 2%;
+}
+
+.descriptoin_general p {
+    color: gray;
+    margin-bottom:3px ;
+    margin-top: 5px;
+    text-align: right;
+}
+.description_content h3 {
+    color: white;
+    font-size: 26px;
+}
+.description_content p {
+    color: gray;
+
+}
+.descriptoin_image {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    flex:52%;
+    max-width: 52%;
+}
+.row {
+    flex:48%;
+    max-width: 48%;
+    margin-right: 5px;
+}
+.description_text {
+    color: gray;
+}
+hr {
+    width: 53%;
+    margin-left: 17%;
+    margin-top: 20px ;
+    margin-bottom: 40px ;
+}
+
+
+/* Media for tablet*/
+@media screen and (max-width: 799px) {
+    .header {
+        flex-direction:column;
+        align-items: center;
+    }
+    .menu a { 
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .menu {
+        margin: auto;
+        overflow: hidden;
+        
+    }
+    .main_img img {
+        flex:100%;
+        max-width: 100%;
+    }
+    .descriptoin_general {
+        padding-top: 20px;
+        padding-right: 2%;
+        flex:20%;
+        max-width: 20%;
+    }
+    .description_content {
+        flex:73%;
+        max-width: 73%;
+        padding-left: 3.5%;
+        padding-right: 1.5%
+    }
+    hr { 
+        width: 73%;
+        margin-left: 25.5%;
+        margin-top: 20px ;
+        margin-bottom: 40px ;
+    }
+}
+
+/* Media for mobile*/
+@media screen  and (max-width: 460px)  { 
+    .description {
+      flex-direction:column;
+    }
+
+    .descriptoin_general {
+        
+        flex: 100%;
+        max-width: 100%;
+    }
+    .descriptoin_general p {
+        text-align: center;
+    }
+    .description_content {
+        flex: 100%;
+        max-width: 100%;
+        
+    }
+    hr {
+        width: 95%;
+        margin-left: 3.5%;
+        margin-right: 1.5%;
+    }
+    
+
+}
+
+
