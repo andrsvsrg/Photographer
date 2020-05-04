@@ -25,13 +25,14 @@ body {
     text-align: center;
     text-decoration: none;
     font-size: 18px;
-    padding: 14px 35px;
+    padding: 35px 35px;
     margin-top: 15px;
     
 }
 
 .logo img {
     padding-top: 15px;
+    padding-left: 40px;
 }
 .menu {
     
@@ -52,5 +53,8 @@ body {
         margin: auto;
         overflow: hidden;
         
+    }
+    .logo img {
+        padding-left: 0;
     }
 }
