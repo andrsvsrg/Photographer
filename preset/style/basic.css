@@ -1,0 +1,109 @@
+body {
+    
+    background-color: black;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+ /*Header and menu */
+.header {
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    padding: 0;
+    margin-bottom: 20px;
+} 
+.menu a {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 35px 35px;
+    margin-top: 15px;
+    
+}
+
+.logo img {
+    padding-top: 15px;
+    padding-left: 40px;
+    
+}
+.menu {
+    
+    overflow: hidden;
+    
+}
+
+/* Кнопка */
+a.button {
+    
+    font-size: 15px;
+    transition: 0.2s;
+    color: white;
+    text-decoration: none;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 7px 30px;
+    background-color: black;
+}
+a.button:hover {
+     background-color: white;
+     color: black;
+     border: 2px solid white;
+}
+
+.contact {
+    margin: 20px  0px 70px 0px;
+    display: block;
+    text-align: center;
+}
+/* Set presset atmosffera*/
+
+.preset_photo h2 {
+    color: #ddcca3;
+    text-align: center;
+    font-size: 35px;
+    text-shadow: -1px -1px #666, 1px 1px #FFF;
+}
+.preset_photo p {
+    color: white;
+    text-align: center;
+    
+}
+.row {
+    display: flex;
+    justify-content:space-evenly;
+
+}
+.column {
+    flex: 44%;
+    max-width: 44%;
+}
+.beer-slider {
+    margin-bottom: 10px;
+}
+
+
+/* Media for tablet*/
+@media screen and (max-width: 799px) {
+    .header {
+        flex-direction:column;
+        align-items: center;
+    }
+    .menu a { 
+        flex-wrap: nowrap;
+        padding: 10px;
+    }
+    .menu {
+        margin: auto;
+        overflow: hidden;
+        
+    }
+}
