@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/BeerSlider.css">
+    <link rel="stylesheet" href="style/basic.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <title>Photographer</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="../img/logo2.png" alt="logo" width="100px" height="100px"></a>
+            </div>
+            <div class="menu"> 
+                <a href="about.html">About Me</a>
+                <a href="blog.html">Blog</a>
+                <a href="photo.html">Photo</a>
+                <a href="presets.html">Presets</a>
+                    
+            </div>
+        </div>
+
+
+        <div id="set1"class="preset_photo">
+            <h2>Атмосфера пленки</h2>
+            <p>Описание прессета Описание прессета Описание прессета Описание прессета Описание прессета  </p>
+            <div class="row">
+                <div class="column">
+                    <div id="beer-slider" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before1.jpg" alt="before1"   >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="../photo/preset/after1.jpg" alt="after1" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider1" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before2.jpg" alt="before2"  >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after2.jpg" alt="after2" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider3" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before1.jpg" alt="before1"   >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after1.jpg" alt="after1" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider4" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before2.jpg" alt="before2"  >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after2.jpg" alt="after2" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider5" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before2.jpg" alt="before2"  >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after2.jpg" alt="after2" style="width: 100%; ">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div id="beer-slider2" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before1.jpg" alt="before1"   >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after1.jpg" alt="after1" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider6" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before2.jpg" alt="before2"  >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after2.jpg" alt="after2" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider7" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before1.jpg" alt="before1"   >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after1.jpg" alt="after1" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider8" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before2.jpg" alt="before2"  >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after2.jpg" alt="after2" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div id="beer-slider9" class="beer-slider" data-beer-label="before" style="width: 100%; ">
+                        <img src="photo/preset/before2.jpg" alt="before2"  >
+                        <div class="beer-reveal" data-beer-label="after" >
+                        <img src="photo/preset/after2.jpg" alt="after2" style="width: 100%; ">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="contact">
+            <a href="about.html" class="button">Связаться со мной для покупки</a>
+            </div>
+        </div>
+
+        <script src="BeerSlider.js"></script>
+    <script>
+        var slider = new BeerSlider( document.getElementById( "beer-slider" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider1" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider2" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider3" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider4" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider5" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider6" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider7" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider8" ) );
+        var slider = new BeerSlider( document.getElementById( "beer-slider9" ) );
+        
+    </script>
+
+    </div>
+</body>
+</html>
