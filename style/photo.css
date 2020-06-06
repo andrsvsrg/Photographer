@@ -73,6 +73,7 @@ input[type="checkbox"] {
     overflow: auto;
     transform: scale(0);
     transition: transform .5s ease-out;
+    
 }
 input[type="checkbox"]:checked + .hidden {
     transform: scale(1);
