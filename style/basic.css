@@ -18,17 +18,7 @@ body {
     padding: 0;
     margin-bottom: 20px;
 } 
-.menu a {
-    display: block;
-    float: right;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 35px 35px;
-    margin-top: 15px;
-    
-}
+
 
 .logo img {
     padding-top: 15px;
@@ -40,7 +30,65 @@ body {
     overflow: hidden;
     
 }
+ /* menu preset*/
 
+
+
+.menu_preset a, .menu a {
+    
+    margin: auto;
+    padding: 1rem 1.25rem;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    z-index: 1;
+}
+.menu_preset a:after ,.menu a:after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 0.5rem;
+    left: 0.5rem;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+}
+.menu_preset a:hover, .menu a:hover {
+    color: #2d2d2d;
+}
+.menu_preset a:hover:after, .menu a:hover:after {
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+.menu a {
+    display: block;
+    float: right;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    
+}
+
+.menu_preset {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+.menu_preset a {
+    
+    font-size: 16px;
+}
 /* Кнопка */
 a.button {
     
@@ -114,6 +162,9 @@ a.button:hover {
         flex: 90%;
         max-width: 90%;
         
+    }
+    .logo img {
+        padding-left: 0;
     }
 
 }
